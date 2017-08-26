@@ -1,0 +1,46 @@
+#view, #add, #addRelation {
+
+  display : none;
+
+}
+
+.all {
+  position: absolute;
+  left:40%;
+  top: 35%;
+
+}
+
+#view {
+  position: relative;
+  top: 40px;
+  left: 7%;
+}
+
+#update {
+  background-color: orange;
+  
+}
+
+#update:hover,
+#update:focus{
+  background-color:DarkOrange;
+}
+
+#add {
+  position: relative;
+  top: 40px;
+  left: -7%;
+
+}
+
+#fail {
+  position: relative;
+  top: 50px;
+
+}
+
+.list:hover,
+.list:focus{
+  cursor: pointer;
+}

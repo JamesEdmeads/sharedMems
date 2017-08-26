@@ -1,0 +1,21 @@
+.relations {
+  left: -50px;
+
+}
+
+#oNameGo{
+  left:25%;
+}
+
+#ownerName {
+  width: 90%;
+}
+
+#fail{
+  left:10%;
+}
+
+#newOwner{
+  left:-20%;
+  
+}

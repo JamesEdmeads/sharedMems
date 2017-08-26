@@ -1,0 +1,27 @@
+.audioUploadTag{
+  position: relative;
+
+  left:0%;  
+  top: 40px;
+}
+
+.musicForm {
+  left:5%;
+  top: 40px;
+
+}
+
+.audio {
+  left:5%;
+  top:35px;
+}
+
+.image {
+  left:5%;
+  top: 75px;
+
+}
+
+#audioName {
+  display:none;
+}

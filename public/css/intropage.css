@@ -1,0 +1,58 @@
+.relations {
+  display: none;
+  position: relative;
+  left: 15%;
+}
+
+.main {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+#oNameGo{
+  position: relative;
+  top: 75px;
+  left: -45%;
+}
+
+#ownerName {
+  position: relative;
+  left: 4%;
+
+}
+
+#fail{
+  position: relative;
+  top: 90px;
+  left: 10%;
+
+}
+
+p{
+  position: relative;
+  left:3%;
+
+}
+
+#newOwner{
+  position: relative;
+  left: 10%;
+
+}
+
+#contId{
+  position: relative;
+  left: 30%;
+
+}
+
+ 
+#cont {
+  position: relative;
+  top: 75px;
+  left: 24%;
+
+}
+
+

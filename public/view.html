@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
+<head>
+  <title>Shared Memories</title>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/general.css"  media="screen"
+       rel="stylesheet" type="text/css" ></link>
+  <link href="css/view.css" media="screen" rel = "stylesheet" type="text/css"></link>
+  <link rel="stylesheet" media="screen and (max-width : 600px) "
+     href="css/viewphone.css" type="text/css" />
+  <script src = "js/general.js"></script>
+  <script src = "js/record.js"></script>
+  <script src = "js/recorder.js"></script>
+  <script src = "js/view.js"></script>
+</head>
+<body>
+  <img id = "top" src = "image/handinhand.jpg"></img>
+  <button id = "home" class = "home">Logout</button>
+  <div id = "image" src = ""></div>
+  <div id = "reply"></div>
+
+  <section id = "addMore">
+    <p>Add new images:</p>
+      <form action = "/addPic" enctype="multipart/form-data" method = "post">
+      <input id = "picUpload" type = "file" name = "upload" multiple></input>
+      <input type = "submit" value="Upload" class = "buttons"></input>
+    </form>
+  </section>
+
+  <section class = "hidden" id = "viewButton">
+    <input id = "view" type = "button" value = "view story" class = "buttons"></input>
+  </section>
+
+</body>
+</html>

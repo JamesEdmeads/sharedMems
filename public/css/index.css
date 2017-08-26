@@ -1,0 +1,143 @@
+
+
+.loginForm {
+  display: none;
+
+}
+
+.loginExist {
+  display: none;
+}
+
+.log {
+  position: relative;
+  left: 20%;
+}
+
+.log2 {
+  position: relative;
+  left: 25%;
+
+}
+
+#response {
+  position: relative;
+  top: -30px;
+
+}
+
+h1 {
+  position: absolute;
+  left : 31%;
+  top : 25%;
+
+}
+
+#main {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  
+}
+
+.loginExist {
+  position: relative;
+  left: -25%;
+  top: 40px;
+
+
+}
+
+.modal {
+  font-size: 14px;
+  background-color: rgba(0,0,0,0.35);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 20px;
+  width:100%; 
+
+}
+
+.modalContent {
+  padding-left:20px;
+  padding-right:5px;
+  padding-bottom: 5px;
+  color: rgb(255,255,255);
+}
+
+#x {
+  color: rgb(211,211,211);
+  position: absolute;
+  right: 2%;
+  font-size: 18px;
+
+}
+
+#x:hover,
+#x:focus {
+  color: rgb(255,255,255);
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.loginForm {
+  position: relative;
+  left: -30%;
+  top: 40px;
+
+}
+
+#login {
+  position: relative;
+  left: -10%;
+}
+
+#newUser{
+ position: relative;
+  left: 10%;
+  background-color:orange;
+}
+
+#newUser:hover,
+#newUser:focus{
+  background-color: DarkOrange;
+}
+
+
+
+#tick {
+  position: relative;
+  top: 20px;
+  left: 37.5%;
+}
+
+#formSend{
+  position: relative;
+  top : 70px;
+  left: 30%;
+  background-color: orange;
+  
+}
+
+#formSend:hover,
+#formSend:focus{
+  background-color: DarkOrange;
+}
+
+#send{
+  position: relative;
+  top: 40px;
+  left:150px;
+}
+
+input[type=checkbox]{
+  transform: scale(1.5);
+}
+
+
+
+
+
+

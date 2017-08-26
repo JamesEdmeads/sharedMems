@@ -1,0 +1,63 @@
+h1 {
+  font-size: 18px;
+  text-align: center;
+  left: 25%;
+
+}
+
+#login {
+  position: absolute;
+  top: -70px;
+
+}
+
+.log {
+  top: -50px;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+}
+
+.log2 {
+  left: 25%;
+  width:80%;
+
+
+}
+
+#newUser {
+  position: absolute;
+  left: -18%;
+}
+
+#existUser{
+  top: 150px;
+  left : -100px;
+}
+
+#send {
+  position: relative;
+  top: 0px;
+  left: 28%;
+
+}
+
+#response {
+  top: 40px;
+
+}
+
+#newUser0{
+  top: 75px;
+  left: -105px;
+
+}
+#tick {
+  left: 100px;
+
+}
+
+#formSend{
+  left: 50px;
+
+}

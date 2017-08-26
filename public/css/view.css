@@ -1,0 +1,84 @@
+body {
+  overflow-x: auto;
+
+}
+
+.image {
+  left : 150px;
+  height : 400px;
+  width : 400px;
+
+}
+
+.hidden {
+  display : none;
+}
+
+.buttons  {
+
+  font-size:16px;
+  border-radius: 12px;
+  text-align: center;
+  padding: 12px 24px;
+
+}
+
+#audioName{
+  position: relative;
+  top: -503px;
+
+}
+
+/*actual audio*/
+.audio {
+  position: relative;
+  left: 450px;
+  top : -500px;
+
+}
+
+/*section stuff*/
+/*audio upload - upload new audio for this*/
+.audioUploadTag{
+  position: relative;
+  top: 40px;
+  left: -120px;
+
+}
+/*record button*/
+#record {
+  background-color: red;
+}
+
+#record:hover,
+#record:focus {
+  background-color: DarkRed;
+}
+
+.musicForm {
+  position: relative;
+  top: 20px;
+
+}
+
+/*end section*/
+
+#addMore {
+  position: relative;
+  top: 0px;
+}
+
+#picUpload {
+  position: relative;
+  left: -20px;
+
+}
+
+
+#viewButton {
+  position: relative;
+  left:45%;
+
+}
+
+
