@@ -110,27 +110,50 @@ function update()  {
 /**********************************************
 **                 Display Pics              **
 **********************************************/
-//sets up the image and on window resize changes image size
+//sets up the image, corrects ratios and position
+// and on window resize changes image size
 function display()  {
 
-  var image = source('image');
-  var w = window.innerWidth;
-  var h = window.innerHeight;
+  var tag = source('image');
+  var image = new Image();
   image.src = media[current];
-  image.width = w-200;
-  image.height = h-10;
   image.className = "currentPic";
-  event(window, 'resize', updateSize);
+  event(image, 'load', position);
+  event(window, 'resize', position);
   nextSong();
-  
-  function updateSize() {
+
+  function position() {
     var w = window.innerWidth;
     var h = window.innerHeight;
-    image.width = w-200;
-    image.height = h -10;
-
+    var height = image.height;
+    var width = image.width;
+    if (width > height) {
+      var ratio = width / w;
+      if(height / ratio < h)  {
+        image.width = w;
+        image.height = height / ratio;
+      } else {
+        var diff = ((height / ratio) /h);
+        image.width = w / diff;
+        image.height = (height / ratio ) / diff; 
+        updateImgleft(w, image);
+      }
+    } else {
+      var ratio = height / h;
+      image.height = h;
+      image.width = width / ratio;
+      updateImgleft(w, image);
+    }
+    tag.appendChild(image);
+    try {
+      tag.removeChild(image.previousSibling);
+    } catch(err) { console.log(err);}
   }
 
+}
+
+function updateImgleft(w, image) {
+  image.style.left = (w/2) - (image.width / 2) + "px";
 }
 
 //changes images
@@ -258,7 +281,7 @@ function getForm(blob) {
   var mediaName = media[current].split("/")[3];
   var name = mediaName.split("\.")[0];  
   var num = time();
-  mediaName = id + "/" + mediaName;
+
   formData.append("file", blob, name+num+"story.wav");
   formData.append("assocPic", mediaName);
 

@@ -14,13 +14,13 @@ git version 2.7.4
 
 
 *****************************************
-to do later for clean up:
+  clean up:
 
-  pic: ratio
+  add : when new link requested
 
   add a readme
 
-  testing
+  testing -> many tests
 
 
 

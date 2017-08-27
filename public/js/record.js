@@ -26,7 +26,7 @@ function setUpAudio() {
 
 //starts recording or stops depending on boolean held in story.js file 
 function recordStart() {
-
+  console.log("recording");
   if(recording === false){
     recording = true;
     if(!sound.paused) sound.pause();
@@ -60,6 +60,7 @@ function startRecording() {
 
 //stops the recording
 function stopRecording() {
+  console.log("done");
   recorder && recorder.stop();
   processBlob();
   recorder.clear();

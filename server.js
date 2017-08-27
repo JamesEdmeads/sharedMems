@@ -210,7 +210,7 @@ function addAudio (cookie, request, response, type, reDirect) {
   form.parse(request);
   form.on('file', function(name, file){name0 = file.name;});
   form.on('field', function(name, value) {
-    if(name === "assocPic") associate = value;
+    if(name === "assocPic") associate = creator + "/" +value;
   });
   form.on('end', complete);
 
