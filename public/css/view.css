@@ -4,7 +4,9 @@ body {
 }
 
 .image {
-  left : 150px;
+  position :relative;
+
+  left : 20px;
   height : 400px;
   width : 400px;
 
@@ -25,15 +27,15 @@ body {
 
 #audioName{
   position: relative;
-  top: -503px;
+  top  :-500px;
 
 }
 
 /*actual audio*/
 .audio {
   position: relative;
-  left: 450px;
   top : -500px;
+  left: 450px;
 
 }
 
@@ -41,12 +43,21 @@ body {
 /*audio upload - upload new audio for this*/
 .audioUploadTag{
   position: relative;
-  top: 40px;
+  top : 40px;
   left: -120px;
+
+}
+
+#audioButton {
+  position : relative;
+  left : 5px;
+
 
 }
 /*record button*/
 #record {
+  position : relative;
+  left : 20px;
   background-color: red;
 }
 
@@ -57,26 +68,35 @@ body {
 
 .musicForm {
   position: relative;
-  top: 20px;
-
+  top : 20px;
 }
 
 /*end section*/
 
 #addMore {
   position: relative;
-  top: 0px;
+  top: 50px;
+  left : 20px;
 }
 
 #picUpload {
   position: relative;
+  top : -35px;
   left: -20px;
+
+}
+
+#picButton {
+  position : relative;
+  left : -20px;
+  top : -50px;
 
 }
 
 
 #viewButton {
   position: relative;
+  top : 40px;
   left:45%;
 
 }

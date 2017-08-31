@@ -278,8 +278,12 @@ function send(blob) {
 function getForm(blob) {
 
   var formData = new FormData();
-  var mediaName = media[current].split("/")[3];
-  var name = mediaName.split("\.")[0];  
+  var mediaName = media[current].split("/")[2];
+  mediaName += "/";
+  mediaName += media[current].split("/")[3];
+  
+  var name = mediaName.split("/")[1];  
+  name = name.split("\.")[0];
   var num = time();
 
   formData.append("file", blob, name+num+"story.wav");

@@ -5,8 +5,6 @@
   handles security, delivering of files and requests
 */
 
-
-
 var http = require("http");
 var https = require("https");
 var formidable = require("formidable");
@@ -83,10 +81,15 @@ function addCookie(newCookie, name0, owner0, associate0) {
 
 function getcookieObj(cook){
 
+  var result = -1;
   for(var i = 0; i < validCookies.length; i++) {
-    if(validCookies[i].cookie = cook) 
-      return validCookies[i];
+    
+    if(validCookies[i].cookie === cook) 
+      result = i;
   }
+
+  if(result !== -1) return validCookies[result];
+  else
 
   return "fail";
 
@@ -96,15 +99,6 @@ function cleanCookies() {
 
   //to run every few hours
   //setInterval(function, 60*60*1000 //will run every hour)
-
-}
-
-//need to scan for cookie then get the chosen value
-function checkAllowed(cookie, value) {
-
-  
-
-  //puts allowed areas into cookie map
 
 }
 
@@ -207,10 +201,12 @@ function addAudio (cookie, request, response, type, reDirect) {
   var owner0 = cookieObj.associate;
   var creator = cookieObj.name;
 
+
   form.parse(request);
   form.on('file', function(name, file){name0 = file.name;});
   form.on('field', function(name, value) {
-    if(name === "assocPic") associate = creator + "/" +value;
+    if(name === "assocPic") associate = value;
+    
   });
   form.on('end', complete);
 

@@ -118,7 +118,7 @@ function add() {
 //initial set up function. Determines whether user is the owner
 //of the story or a contributor and changes the options accordingly
 function setUp(){
-
+  console.log(document.cookie);
   var update = source("update");
   var view = source("view");
   var add0 = source("add");

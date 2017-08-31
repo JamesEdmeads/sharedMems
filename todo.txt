@@ -1,12 +1,5 @@
 button names
 
-/*heroku -> must pay for ssl so remove for testing?
-for deploy
-  -> change names
-  -> update certs for https
-
-would have to change database
-
 node version v4.2.6
 npm version 3.5.2
 git version 2.7.4
@@ -19,10 +12,4 @@ git version 2.7.4
   add : when new link requested
 
   add a readme
-
-  testing -> many tests
-
-
-
-
 

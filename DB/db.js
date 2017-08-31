@@ -92,7 +92,7 @@ module.exports = {
   addUser: function(uName, pWord, owner, execute, addCookie)  {
 
     if(uName === undefined || uName === null) {
-      execute("isNull");
+      execute("isNull", 0);
     }
     else{
    
@@ -103,7 +103,7 @@ module.exports = {
         ps.finalize();
         function check(err, row) {
           if(row != undefined) {
-            execute("alreadyExists");
+            execute("alreadyExists", 0);
           }
           else{
             var hash =  scrypt.kdfSync(pWord, scryptParameters);
@@ -113,7 +113,7 @@ module.exports = {
               ps1.run(uName, hash.toString("hex"), owner); 
               ps1.finalize();
             }catch(err){
-              execute("fail");
+              execute("fail", 0);
             }
             var cookie = getNewCookie();
             addCookie(cookie, uName, owner, null);
@@ -121,7 +121,7 @@ module.exports = {
           }
         }
       }catch(err){
-        execute("fail");
+        execute("fail", 0);
       }
     }
 

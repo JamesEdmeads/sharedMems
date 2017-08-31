@@ -167,7 +167,7 @@ function addMusicUpload(node)  {
   input1.value = parent;
   inputs.push(input1);
 
-  var input2 = create("INPUT", "none", "buttons");
+  var input2 = create("INPUT", "audioButton", "buttons");
   input2.type = "submit";
   input2.value = "Upload";
   inputs.push(input2);
@@ -234,7 +234,6 @@ function handleSendResponse(response) {
 
   var success = false;
   var answer;
-
   switch(response) {
     case "alreadyExist": answer = "Already Exists"; break;
     case "failtypes": answer = "Unable to associate image with image"; break;
